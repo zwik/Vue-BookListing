@@ -3,20 +3,8 @@ const path = require('path');
 const assert = require('chai').assert;
 
 
-describe('HelloWorld.vue', () => {
-  it('should exist and contain vue boilerplate code @vue-project-exists', () => {
-    try {
-      fs.readFileSync(path.join(process.cwd(), 'src/components/HelloWorld.vue'), 'utf8');
-    } catch (e) {
-      assert(false, 'The HelloWorld.vue file does not exist');
-    }
-
-    try {
-      fs.readFileSync(path.join(process.cwd(), 'static/books.json'), 'utf8');
-    } catch (e) {
-      assert(false, 'The books.json file does not exist in the static folder');
-    }
-
+describe('Vue', () => {
+  it('library should exist @vue-project-exists', () => {
     try {
       fs.readFileSync(path.join(process.cwd(), 'node_modules/vue/README.md'), 'utf8');
     } catch (e) {
